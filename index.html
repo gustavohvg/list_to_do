@@ -27,7 +27,28 @@
 </div>
 <hr>
 
-<ul class="list-unstyled" id="list-todo"></ul>
+<ul class="list-unstyled" id="list-todo">
+    <li tabindex="0">
+        <span class="material-icons-outlined mark-todo" title="marcar tarefa como concluída" data-marked="false" onclick="markUnmarkTodo($(this))">circle</span>
+        <span class="text-todo">lista de tarefas</span>
+        <span class="material-icons del-todo" title="remover tarefa" onclick="delTodo($(this))">remove</span>
+    </li>
+    <li tabindex="0">
+        <span class="material-icons-outlined mark-todo" title="marcar tarefa como concluída" data-marked="false" onclick="markUnmarkTodo($(this))">circle</span>
+        <span class="text-todo">clicando em <i>TAB</i> você foca nesta lista</span>
+        <span class="material-icons del-todo" title="remover tarefa" onclick="delTodo($(this))">remove</span>
+    </li>
+    <li tabindex="0">
+        <span class="material-icons-outlined mark-todo" title="marcar tarefa como concluída" data-marked="false" onclick="markUnmarkTodo($(this))">circle</span>
+        <span class="text-todo">e com o item focado, clique <i>Enter</i> para marcar/desmarcar tarefa como concluída</span>
+        <span class="material-icons del-todo" title="remover tarefa" onclick="delTodo($(this))">remove</span>
+    </li>
+    <li tabindex="0">
+        <span class="material-icons-outlined mark-todo" title="marcar tarefa como concluída" data-marked="false" onclick="markUnmarkTodo($(this))">circle</span>
+        <span class="text-todo">e <i>Delete</i> para excluir tarefa</span>
+        <span class="material-icons del-todo" title="remover tarefa" onclick="delTodo($(this))">remove</span>
+    </li>
+</ul>
 
 <script type="text/javascript" src="js/main.js"></script>
 </body>

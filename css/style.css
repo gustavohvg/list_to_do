@@ -17,8 +17,8 @@
 #list-todo > li:nth-child(odd) {
     background-color: #f0f0f0;
 }
-#list-todo > li:hover {
-    background-color: #c1c1c1;
+#list-todo > li:is(:hover, :focus) {
+    background-color: #e1e1e1;
 }
 
 #list-todo .text-todo {

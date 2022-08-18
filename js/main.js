@@ -9,11 +9,12 @@ const addTodo = (str) => {
     } else{
         inputDescripTodoAdd.css('border-color', '#ced4da');
     }
+
     const content = `
-    <li>
-        <span class="material-icons-outlined mark-todo" title="marcar tarefa como concluída" data-marked="false" onclick="markUnmarkTodo($(this))" tabindex="0">circle</span>
+    <li tabindex="0">
+        <span class="material-icons-outlined mark-todo" title="marcar tarefa como concluída" data-marked="false" onclick="markUnmarkTodo($(this))">circle</span>
         <span class="text-todo">${str}</span>
-        <span class="material-icons del-todo" title="remover tarefa" onclick="delTodo($(this))" tabindex="0">remove</span>
+        <span class="material-icons del-todo" title="remover tarefa" onclick="delTodo($(this))">remove</span>
     </li>
     `;
 
@@ -40,5 +41,14 @@ btnAddTodo.click(() => {
 inputDescripTodoAdd.on('keydown', (event) => {
     if(event.keyCode === 13) {
         btnAddTodo.click();
+    }
+});
+
+$("#list-todo").on('keydown', 'li', function (event){
+    if (event.keyCode === 13) {
+        $(this).find('.mark-todo').click();
+    }
+    if (event.keyCode === 8) {
+        $(this).find('.del-todo').click();
     }
 });
