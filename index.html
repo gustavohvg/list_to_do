@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- icons  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+    <title>List To Do</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body class="py-5 container">
+<h3>List To Do</h3>
+
+<div class="input-group mb-3">
+    <input type="text" class="form-control" id="descrip-todo-add" placeholder="Descrição" aria-label="Descrição" aria-describedby="btn-add" autofocus>
+    <div class="input-group-append">
+        <button class="btn btn-primary d-flex" type="button" id="btn-add"><span class="material-icons">add_task</span></button>
+    </div>
+</div>
+<hr>
+
+<ul class="list-unstyled" id="list-todo"></ul>
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
