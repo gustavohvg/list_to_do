@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+#list-todo {
+    width: 400px;
+    max-width: 100%;
+    margin: auto;
+}
+
+#list-todo > li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 10px;
+    transition: all .3s;
+}
+#list-todo > li:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+#list-todo > li:hover {
+    background-color: #c1c1c1;
+}
+
+#list-todo .text-todo {
+    text-align: center;
+}
+
+#list-todo :is(.mark-todo, .del-todo){
+    cursor: pointer;
+}
